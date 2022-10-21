@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('form').on('submit', function(e) {
         e.preventDefault();
 
-        const enderecoTarefa = $('#nome-tarefa').val
+        const enderecoTarefa = $('#nome-tarefa').val()
         const novaTarefa = $(`<li></li>`);
         $(novaTarefa).html(enderecoTarefa);
         $(novaTarefa).appendTo("ul");
@@ -14,9 +14,9 @@ $(document).ready(function() {
         $(`<div class="tarefa-jquery>${enderecoTarefa} </div`).appendTo(novaTarefa);
 
         $('#nome-tarefa').val('');
-        $('#nome-tarefa').click(function() {
+        $(novaTarefa).click(function() {
 
             $(this).css('text-decoration', 'line-through');
 
         })
-});
+})})
