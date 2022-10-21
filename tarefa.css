@@ -31,11 +31,6 @@ button {
     font-weight: bold;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-}
-
 ul li {
     background-color: lightgray;
     color: black;
